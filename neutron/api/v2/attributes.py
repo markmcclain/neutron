@@ -24,7 +24,8 @@ from neutron.openstack.common import uuidutils
 
 LOG = logging.getLogger(__name__)
 
-ATTR_NOT_SPECIFIED = object()
+# TODO(markmcclain): remove this shim definition
+ATTR_NOT_SPECIFIED = constants.ATTR_NOT_SPECIFIED
 # Defining a constant to avoid repeating string literal in several modules
 SHARED = 'shared'
 

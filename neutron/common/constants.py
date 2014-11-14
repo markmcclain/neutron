@@ -15,6 +15,13 @@
 
 # TODO(salv-orlando): Verify if a single set of operational
 # status constants is achievable
+class _NotSpecified(object):
+    def __repr__(self):
+        return u'<attribute not specified>'
+
+
+ATTR_NOT_SPECIFIED = _NotSpecified()
+
 NET_STATUS_ACTIVE = 'ACTIVE'
 NET_STATUS_BUILD = 'BUILD'
 NET_STATUS_DOWN = 'DOWN'
